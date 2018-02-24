@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.GridPage">
+   
+        <Grid  BackgroundColor="Pink">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+            <Label Grid.Row ="0" Grid.Column="0" Text="lab1" BackgroundColor ="Silver"></Label>
+            <Label Grid.Row ="0" Grid.Column="1" Text="lab2" BackgroundColor ="Silver"></Label>
+            <Label Grid.Row ="1" Grid.Column="0" Text="lab3" BackgroundColor ="Silver"></Label>
+            <Label Grid.Row ="1" Grid.Column="1" Text="lab4" BackgroundColor ="Silver"></Label>
+        <Label Grid.Row ="2" Grid.ColumnSpan="3" Text="colspan" BackgroundColor ="Silver"></Label>
+        <Label Grid.RowSpan ="3" Grid.Column="2" Text="lab4" BackgroundColor ="Silver"></Label>
+
+    </Grid>
+
+</ContentPage>
